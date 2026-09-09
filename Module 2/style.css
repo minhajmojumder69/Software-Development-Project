@@ -1,0 +1,52 @@
+h1{
+    color: brown;
+}
+
+.title1{
+    color: chocolate;
+    font-size: 30px;
+    margin: 50px;
+}
+.title2{
+    color: darkcyan;
+    font-size: 40px;
+}
+.title3{
+    color: burlywood;
+    font-size: 50px;
+}
+
+#dis{
+    font-style: italic;
+}
+
+.box{
+    width: 200px;
+    /* height: 200px; */
+    border: 5px solid rgb(216, 167, 164);
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: rgb(9, 119, 123);
+    color:rgb(254, 254, 254);
+}
+
+.line1{
+    display: inline;
+}
+.line2{
+    display: inline;
+    color: black;
+}
+
+.para{
+    color: goldenrod;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Caacupe One", sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
