@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(182, 212, 213);
+}
+.logo{
+    width: 80px;
+    padding: 5px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+li:hover{
+    color: rgb(161, 96, 10);
+    cursor: pointer;
+}
+
+.menu-container ul{
+    display:flex;
+    gap: 15px;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.banner-left{
+    width: 400px;
+    line-height: 1.5;
+}
+.profile{
+    width: 350px;
+}
+
+.btn{
+    padding: 15px 30px;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.hire-btn{
+    background-color: cadetblue;
+}
+.project-btn{
+    background-color:darkgray ;
+}
+.title{
+    font-size: 40px;
+}
+.designetion{
+    font-size: 18px;
+    font-style: italic;
+}
+.service-container{
+    margin-top: 25px ;
+}
+.service-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.service-card{
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px gray;
+    border-radius: 7px;
+    text-align: center;
+}
+.service-img{
+    width: 220px;
+    height: 200px;
+}
+.service-card-btn{
+    cursor: pointer;
+    padding: 11px 14px;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    color: rgb(247, 248, 249);
+    background-color: rgb(80, 149, 219);
+}
+.web-service-title{
+    padding: 10px;
+}
+.web-para{
+    margin: 5px;
+}
+.contact-us{
+    margin-inline: auto;
+    padding: 50px;
+    width: 400px;
+    height: 300px;
+    margin-top: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 4px grey;
+}
+.input-box{
+    padding: 10px;
+    width: 200px;
+    margin-top: 5px;
+}
+.messege-box{
+    padding: 10px;
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+}
+.send-btn{
+    width: 20%;
+    padding: 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(205, 161, 103);
+    color: aliceblue;
+}
