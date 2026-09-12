@@ -1,0 +1,128 @@
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(photos/hero-bgt.png);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-img{
+    margin-top: 30px;
+    width: 80px;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    color: #FB9D5C;
+}
+.manu-container ul{
+    margin-top: 30px;
+    display: flex;
+    gap: 70px;
+}
+.banner-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    gap: 50px;
+}
+.banner-left{
+    margin-top: 210px;
+    width: 350px;
+    text-align: center;   
+}
+.hhl{
+    font-size: 21px;
+    color: #FB9D5C;
+}
+.headline{
+    color: white;
+    width: px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.read-me-btn{
+    margin-top: 5px;
+    border: none;
+    color: black;
+    background-color: #FB9D5C;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-right{
+    margin-top: -35px;
+    width: 450px;
+}
+.person{
+    width: 434.16px;
+}
+
+.logos-section{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    background-color: rgb(237, 237, 237);
+}
+
+.service-container{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-title1{
+    text-align: center;
+    font-size: 50px;
+}
+.service-title2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.services{
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card{
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+.service-logo{
+    width: 85px;
+    height: 85px;
+}
+.service-name{
+    margin: 10px;
+}
+.line{
+    margin:10px;
+}
+.line1{
+    margin: 10px;
+    padding-top: 5px;
+    width: 150px;
+}
