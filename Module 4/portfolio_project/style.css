@@ -1,0 +1,214 @@
+.navlogo{
+    width: 60px;
+    height: 70px;
+}
+.navbar-btn{
+    margin-top: 17px;
+    margin-left: 15px;
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #0DCAF0;
+}
+.name-title{
+    color: #0DCAF0;
+}
+.left-container{
+    width: 500px;
+}
+.right-container{
+    width: 300px;
+    height: 430px;
+}
+.profile{
+    margin-top: -25px;
+    width: 300px;
+    height: 430px;
+}
+.profile-btn{
+    margin-left: 15px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #0DCAF0;
+    border-radius: 5px;
+}
+.icons{
+    color: #0DCAF0;
+}
+.portfolio-card{
+    border: 1px solid rgb(76, 76, 75);
+    width: 972px;
+    height: 385px;
+}
+.card-img{
+    width: 450px;
+    height: 290px;
+}
+.project-img{
+    width: 450px;
+    height: 290px;
+}
+.card-details{
+    width: 485px;
+    height: 385px;
+}
+.card-title{
+    color: #0DCAF0;
+    font-size:28px;
+}
+.tools-btn{
+    background-color:#6C757D ;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-style: bold;
+    border: none;
+    border-radius: 5px;
+}
+.lang-btn{
+    background-color:#6C757D ;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-style: bold;
+    border: none;
+    border-radius: 5px;
+}
+.education-container{
+    width: 1070px;
+    height: 675px;
+}
+.expertise{
+    width: 535px;
+    height: 672px;
+}
+.edu-card{
+    width: 510px;
+    height: 165px;
+}
+.edu-title{
+    color: #0DCAF0;
+}
+
+.contact-card{
+    width: 664px;
+    height: 364px;
+}
+.contact-container{
+    flex-direction: column;
+}
+.contact-card{
+    border: 1px solid;
+    box-shadow: 2px 2px 6px #4e799f;
+    padding: 60px;
+}
+.form-control{
+    background-color: #303132;
+}
+.foot{
+    flex-direction: column;
+}
+
+
+@media (max-width: 767px){
+    .navbar.container{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .manu-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .manu-container ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px !important;
+        gap: 15px !important;
+    }
+    .intro-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 100%;
+        max-width: 300px;
+    }
+    .profile{
+        width: 100%;
+        max-width: 300px;
+    }
+    .icons{
+        justify-content: center;
+    }
+    .portfolio-card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .card-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-img{
+        width: 100%;
+        height: auto; 
+    }
+    .card-details{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .by-using{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .education-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+    .expertise{
+        width: 100%;
+        height: auto;
+    }
+    .edu-card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .edu-container{
+        text-align: center;
+    }
+    .contact-card{
+        width: 100%;
+        padding: 30px;
+        height: auto;
+    }
+    .lang-icons{
+        justify-content: center;
+    }
+    .tools-btn, .lang-btn{
+        width: 45%; 
+    }
+    .foot{
+        text-align: center;
+    }
+    .last3{
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
