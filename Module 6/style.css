@@ -13,3 +13,14 @@
     height: 40px;
     padding: 10px;
 }
+.user{
+    padding: 20px;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+.userdata-container{
+    display: flex;
+    justify-content: center;
+}

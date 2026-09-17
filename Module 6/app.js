@@ -37,3 +37,28 @@ document.getElementById('add-btn').addEventListener('click',(event)=>{
 // const addbtn = (event)=>{
 //     console.log('Hello Boxx');
 // }
+
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(data => {
+        displayData(data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+const displayData = (userdata)=>{
+    const container = document.getElementById('userdata-container');
+
+    userdata.forEach(element => {
+        const div= document.createElement('div');
+        div.classList.add('user');
+        div.innerHTML=`
+        <h4>title</h4>
+        <p>Description</p>
+        <button>Details</button>
+        `;
+
+        container.appendChild(div);
+    });
+}
