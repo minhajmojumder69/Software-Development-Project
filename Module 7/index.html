@@ -13,8 +13,8 @@
             <div class="container-fluid d-flex justify-content-around">
                 <a class="navbar-brand">Drinks Shop</a>
                 <form class="searchbar d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search by name or first letter" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input id="search-input" class="form-control me-2" type="search" placeholder="Search by name or first letter" aria-label="Search"/>
+                <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </nav>
@@ -23,7 +23,26 @@
 
         <div class="main-conteiner d-flex justify-content-evenly mt-3 row">
             <div id="product-container" class="product-conteiner col-8">
-            
+            <!-- Bootstrap Modal -->
+            <div class="modal fade" id="drinkModal" tabindex="-1" aria-labelledby="drinkModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <!-- p-0 removes padding so the image sits flush at the top -->
+                <div class="modal-body p-0">
+                    <img id="modal-img" src="" class="img-fluid rounded-top" alt="Drink Image">
+                    <div class="p-4">
+                    <h5 class="fw-bold mb-3">Details</h5>
+                    <p class="mb-1"><strong>Category:</strong> <span id="modal-category"></span></p>
+                    <p class="mb-3"><strong>Alcoholic:</strong> <span id="modal-alcoholic"></span></p>
+                    <p id="modal-instructions" class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
             </div>
             <div id="cart-conteiner" class="cart-conteiner col-3">
                 <h2>Total Cart: <span id="total" class="total">0</span></h2>

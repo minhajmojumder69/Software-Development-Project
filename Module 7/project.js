@@ -24,7 +24,7 @@ const displayProducts = (products) => {
         <h4>Category: ${product.strCategory}</h4>
         <h5>Instructions: ${product.strInstructions.slice(0, 100)}</h5>
         <button onclick="handletocart(this,'${product.strDrinkThumb}','${product.strDrink}')" class= "item-btn">Add to cart</button>
-        <button class= "item-btn">Details</button>
+        <button onclick= "singleProduct('${product.idDrink}')" class= "item-btn" data-bs-toggle="modal" data-bs-target="#drinkModal">Details</button>
         
         `;
 
@@ -53,5 +53,19 @@ const handletocart = (buttonElement,img, name) => {
   count = count + 1;
   document.getElementById("total").innerText = count;
 };
+
+const singleProduct = (id)=>{
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
+    .then(response => response.json())
+    .then((data) => {
+      const drink = data.drinks[0];
+
+      document.getElementById("modal-img").src = drink.strDrinkThumb;
+      document.getElementById("modal-category").innerText = drink.strCategory;
+      document.getElementById("modal-alcoholic").innerText = drink.strAlcoholic;
+      document.getElementById("modal-instructions").innerText = drink.strInstructions;
+    })
+  }
+
 
 allProduct();
